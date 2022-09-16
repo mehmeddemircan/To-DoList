@@ -20,21 +20,14 @@ namespace To_DoList.Entities.Concrete
 
         public  ICollection<Mission>? Missions { get; set; }
 
-
-        [ForeignKey("Color")]
         public int ColorId { get; set; } = 1;
-
-
         public virtual Color? Color { get; set; }
+
+        public int? ThemeId { get; set; }
+
         public virtual Theme? Theme { get; set; }
 
 
-        [ForeignKey("Theme")]
-        public int? ThemeId { get; set; }
 
-
-        
-
-       
     }
 }
