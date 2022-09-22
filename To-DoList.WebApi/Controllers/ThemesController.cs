@@ -25,12 +25,7 @@ namespace To_DoList.WebApi.Controllers
         }
 
 
-        [HttpPost("add-theme")]
-
-        public async Task<ActionResult<Theme>> AddTheme(Theme theme)
-        {
-            return await _themeService.AddAsync(theme);
-        }
+      
 
     }
 }

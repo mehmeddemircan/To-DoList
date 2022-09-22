@@ -40,14 +40,14 @@ namespace To_DoList.Business.Concrete
             throw new NotImplementedException();
         }
 
-        public Task TDelete(int id)
+        public async Task TDelete(int id)
         {
-            throw new NotImplementedException();
+            await _themeRepository.TDelete(id);
         }
 
-        public Task TUpdate(int id, Theme entity)
+        public async Task TUpdate(int id, Theme entity)
         {
-            throw new NotImplementedException();
+            await _themeRepository.TUpdate(id, entity); 
         }
     }
 }
